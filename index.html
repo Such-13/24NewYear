@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year 2024</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-image: url('dark-night-background.png'); /* Replace 'dark-night-background.png' with your image file */
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Pacifico', cursive; /* Change to your preferred stylish font */
+        }
+        .letter {
+            font-size: 5em; /* Adjust the font size as needed */
+            opacity: 0;
+            position: absolute;
+            animation: fadeIn 2s forwards, glowing 2s infinite alternate, dance 2s infinite, changeColor 1s infinite;
+        }
+          
+        @keyframes danceGlow {
+    0%, 100% {
+        transform: translateY(0);
+        text-shadow: 0 0 10px rgba(255, 254, 253, 0.8); /* Neon glow color and intensity */
+    }
+    50% {
+        transform: translateY(-8px);
+        text-shadow: 0 0 20px rgba(220, 80, 233, 1.5); /* Adjust glow during animation */
+    }
+}
+
+#cuteMessage {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.7em;
+    color: #f42fbc;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transform: translateX(-50%);
+    animation: danceGlow 1.5s ease-in-out infinite;
+}
+
+
+        #h {
+            left: 15%;
+            animation-delay: 0.2s;
+        }
+
+        #a {
+            left: 20%;
+            animation-delay: 0.4s;
+        }
+
+        #p {
+            left: 25%;
+            animation-delay: 0.6s;
+        }
+
+        #p2 {
+            left: 30%;
+            animation-delay: 0.8s;
+        }
+
+        #y {
+            left: 35%;
+            animation-delay: 1s;
+        }
+
+        #space1 {
+            width: 5%;
+        }
+
+        #n {
+            left: 45%;
+            animation-delay: 1.2s;
+        }
+
+        #e {
+            left: 50%;
+            animation-delay: 1.4s;
+        }
+
+        #w {
+            left: 55%;
+            animation-delay: 1.6s;
+        }
+
+        #space2 {
+            width: 5%;
+        }
+
+        #y2 {
+            left: 65%;
+            animation-delay: 1.8s;
+        }
+
+        #e2 {
+            left: 70%;
+            animation-delay: 2s;
+        }
+
+        #a2 {
+            left: 75%;
+            animation-delay: 2.2s;
+        }
+
+        #r {
+            left: 80%;
+            animation-delay: 2.4s;
+        }
+
+        .sparkle {
+            position: absolute;
+            background-color: #fff;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            opacity: 0;
+            animation: sparkleAnimation 1s infinite;
+        }
+           
+        /* ... (your existing styles) ... */
+
+        .ano_novo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            padding: 200px 100px 0px 0px;
+        }
+        .ano_novo > span {
+            font-family: 'YourNewFont', sans-serif; /* Change 'YourNewFont' to the desired font */
+            font-size: 175px;
+            font-weight: 700;
+            margin-right: 150px;
+            animation: colorChangeAndGlow 5s infinite;
+        }
+
+        /* ... (existing keyframes) ... */
+
+      @keyframes colorChangeAndGlow {
+    0%, 100% {
+        color: #ff0000; /* Red */
+        text-shadow: 0 0 10px #a43939, 0 0 20px #fff, 0 0 30px #fff;
+    }
+    16.66% {
+        color: #ff8000; /* Orange */
+        text-shadow: 0 0 20px #fff, 0 0 30px #e5df3d, 0 0 40px #fff;
+    }
+    33.33% {
+        color: #ffff00; /* Yellow */
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1be6df;
+    }
+    50% {
+        color: #80ff00; /* Lime */
+        text-shadow: 0 0 20px #fff, 0 0 30px #e5df3d, 0 0 40px #fff;
+    }
+    66.66% {
+        color: #00ff80; /* Cyan */
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1be6df;
+    }
+    83.33% {
+        color: #0040ff; /* Blue */
+        text-shadow: 0 0 20px #fff, 0 0 30px #e5df3d, 0 0 40px #fff;
+    }
+}
+        
+
+        span.seis {
+            position: absolute;
+            top: 50%;
+            right: 50%;
+            margin-right: -150px;
+            animation: vai_2016 5s ease-in-out 5s forwards, colorChangeAndGlow 5s infinite;
+        }
+
+        span.sete {
+            position: absolute;
+            right: 10%;
+            margin-right: -121px;
+            animation: vem_2017 6s ease-in-out forwards ,colorChangeAndGlow 5s infinite;
+        }
+
+        span.sete:before {
+            content: '';
+            width: 0px;
+            height: 6px;
+            display: block;
+            border-radius: 3px;
+            background: #94add5;
+            transform: rotate(0deg);
+            transform-origin: left top;
+            position: absolute;
+            top: 55px;
+            left: 10px;
+            z-index: -1;
+            animation: entrega_balao 1s ease-in-out 4s;
+        }
+
+       
+    
+        .balao {
+            width: 100px;
+    height: 120px;
+    background: rgb(242, 242, 117); /* Set the background color to yellow */
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -165px;
+    right: 100%;
+    margin-right: -270px; /* Adjust the margin-right value to shift the circle to the left */
+    animation: vem_e_vai_balao 10s ease-in-out forwards;
+        }
+
+        #haze {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        font-family: 'Pacifico', cursive; /* Change to your preferred stylish font */
+        font-size: 5em; /* Adjust the font size as needed */
+        font-weight: bold;
+        opacity: 0;
+        animation: fadeIn 2s forwards, glowing 2s infinite alternate, dance 2s infinite, changeColor 1s infinite, lift 2s infinite alternate, moveLeftRight 5s infinite linear;
+    }
+
+    @keyframes moveLeftRight {
+        0% {
+            left: 0;
+        }
+        50% {
+            left: 50%; /* Adjust the distance the element moves to the right */
+        }
+        100% {
+            left: 100%;
+        }
+    }
+
+        /* ... (your existing styles) ... */
+
+        @keyframes vem_2017 {
+            0% {
+                right: 0%;
+            }
+            66.6666% {
+                right: 50%;
+                margin-right: -300px;
+            }
+            90% {
+                right: 50%;
+                margin-right: -300px;
+            }
+            100% {
+                right: 50%;
+            }
+        }
+
+        @keyframes vem_e_vai_balao {
+            0% {
+                right: 0%;
+            }
+            40% {
+                right: 50%;
+                margin-right: -300px;
+            }
+            50% {
+                right: 50%;
+                margin-right: -200px;
+                top: 50%;
+            }
+            100% {
+                top: -100%;
+                right: 50%;
+            }
+        }
+
+        @keyframes entrega_balao {
+            0% {
+                transform: rotate(-30deg);
+                width: 40px;
+            }
+            100% {
+                transform: rotate(-150deg);
+                width: 70px;
+            }
+        }
+
+        @keyframes vai_2016 {
+            0% {
+                top: 50%;
+            }
+            100% {
+                top: -100%;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(100%);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes glowing {
+            0% {
+                text-shadow: 0 0 10px #a43939, 0 0 20px #fff, 0 0 30px #fff;
+            }
+            50% {
+                text-shadow: 0 0 20px #fff, 0 0 30px #e5df3d, 0 0 40px #fff;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #1be6df;
+            }
+        }
+
+        @keyframes dance {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+            50% {
+                transform: translateY(0) rotate(0deg);
+            }
+            75% {
+                transform: translateY(-20px) rotate(-5deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        @keyframes changeColor {
+            0% {
+                color: #ff0000; /* Red */
+            }
+            20% {
+                color: #00ff00; /* Green */
+            }
+            40% {
+                color: #0000ff; /* Blue */
+            }
+            60% {
+                color: #ffff00; /* Yellow */
+            }
+            80% {
+                color: #ff00ff; /* Magenta */
+            }
+            100% {
+                color: #00ffff; /* Cyan */
+            }
+        }
+
+        @keyframes sparkleAnimation {
+            0%, 100% {
+                transform: translateY(0) scale(1);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(-20px) scale(1.5);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="haze">Haze</div>
+
+    <div id="cuteMessage">Wishing you a year filled with joy, love, and sparkles!</div> 
+
+    <div id="h" class="letter">H</div>
+    <div id="a" class="letter">A</div>
+    <div id="p" class="letter">P</div>
+    <div id="p2" class="letter">P</div>
+    <div id="y" class="letter">Y</div>
+    <div id="space1"></div>
+    <div id="n" class="letter">N</div>
+    <div id="e" class="letter">E</div>
+    <div id="w" class="letter">W</div>
+    <div id="space2"></div>
+    <div id="y2" class="letter">Y</div>
+    <div id="e2" class="letter">E</div>
+    <div id="a2" class="letter">A</div>
+    <div id="r" class="letter">R</div>
+
+    <!-- Adding the number animation elements -->
+    
+    <div ce class="ano_novo">
+        <span>202</span>
+        <span class="seis">3</span>
+        <span class="sete">4</span>
+        <div class="balao"></div>
+        
+    </div>
+     
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                createSparkles();
+            }, 1000);
+        });
+
+        function createSparkles() {
+            const container = document.body;
+
+            for (let i = 0; i < 50; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * window.innerWidth + 'px';
+                sparkle.style.top = Math.random() * window.innerHeight + 'px';
+
+                container.appendChild(sparkle);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(() => {
+                createSparkles();
+            }, 1000);
+        });
+
+        function createSparkles() {
+            const container = document.body;
+
+            for (let i = 0; i < 50; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * window.innerWidth + 'px';
+                sparkle.style.top = Math.random() * window.innerHeight + 'px';
+
+                container.appendChild(sparkle);
+            }
+        }
+    </script>
+</body>
+</html>
